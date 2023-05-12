@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.container {
+    width: 60%;
+    height: 400px;
+    position: relative;
+     float: right;
+     display: block;
+     font-family: Roboto;
+     clear: both;
+ }
+
+ .container .me1 {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 30px;
+    padding-left: 10%;
+    line-height: 25px;
+    clear: both;
+}
+
+
+ .container .me2 {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: 20px;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-right: 10px;
+    clear: both;
+}
+
+.container .me3 {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;    
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    clear: both;
+}
+
+.container .me3 h3, h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.container .me4 {
+    position: absolute;
+    margin-top: 50px;
+    opacity: 10px;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.container .me5 {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    clear: both;
+}
+
+.me4 .portfolio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.me4 .portfolio ul{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    box-sizing: border-box;
+    
+}
+
+.me4 .portfolio ul li {
+    
+    display: inline-block;
+    transition: 0.7s;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+
+.me4 .portfolio ul li:last-child {
+        margin-right: 0px;
+    }
+
+.me4 .portfolio li .project {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+
+.me4 .portfolio li:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    border-radius: 15px;
+    box-sizing: border-box;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    from {scale: 1;} to {scale: 1.25;}
+}
+
+
+
+.active {
+    animation: show 5s ease-in-out;
+    
+
+
+}
+
+.remove {
+    animation: fade 5s ease-in-out;
+}
+
+@keyframes show {
+    from {visibility: hidden;} to {visibility: visible;};
+    from {opacity: 0;} to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: 1;} to {opacity: 0;}
+    from {visibility: visible;} to {visibility: hidden;}
+    
+}
+
+@media (max-width: 640px ) {
+.container {
+    width: 100%;
+}
+}

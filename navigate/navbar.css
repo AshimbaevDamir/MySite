@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.navbar {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    clear: both;
+    z-index: 1;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 0;
+    float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+      
+        width: 100%;
+        
+    }
+    .navbar ul li {
+        font-size: 10px;
+    }
+}
+
+.navbar ul {
+    position: absolute;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    display: inline-flex;
+    padding:  0px;
+    font-family: Roboto;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 0;
+    flex-wrap: wrap;
+    list-style: none;
+   
+   
+    
+   
+}
+
+
+.navbar a {
+    color: rgba(255, 0, 0, 0.3);
+    text-decoration: none;
+    display: inline-block;
+   padding: 0 10px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.navbar ul li{
+    display: inline;
+   padding: 10px 10px;
+  
+   margin-right: 0px;
+
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    
+    color: rgba(255, 0, 0, 1);
+}
+
+
+.navbar a::after { 
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #ff0000;
+    width: 0;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+  
+ 
+  .navbar a:hover::after { width: 100%; }

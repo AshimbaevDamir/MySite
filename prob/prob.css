@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+
+
+.image1 {
+    position: relative;
+    clear: both;
+    display:flex;
+}
+
+
+.me {
+    width: 50%;
+    height: 500px;
+    background-color: peachpuff;
+}
+
+.logo {
+    width: 100%;
+    font-size: 40px;
+    font-family: Permanent Marker;
+    cursor: pointer;
+    color: red;
+    clear: both;
+    z-index: 2000;
+    position: relative;
+}
+
+.a {
+    position: absolute;
+    display: block;
+    left: 5px;
+    transform: rotate(-20deg);
+    top: 6px;
+    transition: 0.3s;
+    
+}
+
+.d {
+    position: absolute;
+    display: block;
+    left: 20px;
+    transform: rotate(90deg);
+    top: 10px;
+    font-size: 80px;
+}
+
+.secondName {
+    position: absolute;
+    left: 80px;
+    font-size: 20px;
+    top: 25px;
+}
+
+
+.a2 {
+    position: absolute;
+    display: block;
+    left: 51px;
+    transform: rotate(20deg);
+    top: 7px;
+    transition: 0.3s;
+}
+
+.eye {
+    width: 7px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 27px;
+    
+}
+
+.eyeSecond {
+    width: 7px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    
+}
+
+
+
+
+.logo:hover .a {
+    transform: rotate(0deg);
+    left: 9px;
+}
+
+.logo:hover .a2 {
+    transform: rotate(0deg);
+    left: 47px;
+}
+
+
+.logo:hover .eye {
+    visibility: visible;
+    width: 6px;
+    height: 6px;
+}
+
+.logo:hover .eyeSecond {
+    visibility: visible;
+    width: 6px;
+    height: 6px;
+}

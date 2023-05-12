@@ -1,0 +1,25 @@
+.image1 {
+    position: relative;
+    clear: both;
+    width: 30%;
+    
+    
+    float: left;
+}
+
+
+.me img{
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    
+}
+
+@media screen and (max-width: 640px) {
+
+    .me img{
+        display: none;
+        
+    }
+}
